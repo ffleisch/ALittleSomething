@@ -1,0 +1,4 @@
+﻿Source.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall b2World::b2World(struct b2Vec2 const &)" (??0b2World@@QAE@ABUb2Vec2@@@Z)" in Funktion "_main".
+Source.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __thiscall b2World::~b2World(void)" (??1b2World@@QAE@XZ)" in Funktion "_main".
+C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing(ALS)\ALittleSomthing(ALS)\libs\Box2D.lib : warning LNK4272: Bibliothekcomputertyp "x64" steht in Konflikt mit dem Zielcomputertyp "X86"
+C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing(ALS)\Debug\ALittleSomthing(ALS).exe : fatal error LNK1120: 2 nicht aufgelöste Externe
