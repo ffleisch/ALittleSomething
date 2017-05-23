@@ -71,11 +71,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\libs;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\opengl_stuff\libs;C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\opengl_stuff\headers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\libs;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\opengl_stuff\libs;C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\opengl_stuff\headers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -95,7 +97,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Box2D.lib;glew32.lib;glew32s.lib;glfw3.lib;glfw3dll.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\opengl_stuff\dlls;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -110,7 +113,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Box2D.lib;glew32.lib;glew32s.lib;glfw3.lib;glfw3dll.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing%28ALS%29\ALittleSomthing%28ALS%29\opengl_stuff\dlls;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -150,7 +154,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main_game.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main_game.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

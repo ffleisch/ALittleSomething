@@ -1,3 +1,4 @@
-﻿  Source.cpp
+﻿cl : Befehlszeile warning D9028: Fehler beim minimalen Neukompilieren, normale Erstellung wird durchgeführt.
+  Source.cpp
   ALittleSomthing(ALS).vcxproj -> C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing(ALS)\x64\Debug\ALittleSomthing(ALS).exe
   ALittleSomthing(ALS).vcxproj -> C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing(ALS)\x64\Debug\ALittleSomthing(ALS).pdb (Full PDB)
