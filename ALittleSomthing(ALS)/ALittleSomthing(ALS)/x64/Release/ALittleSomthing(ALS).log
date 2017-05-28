@@ -1,0 +1,19 @@
+﻿  error.cpp
+  main_game.cpp
+  renderer.cpp
+  Source.cpp
+main_game.obj : error LNK2001: unresolved external symbol "public: void __cdecl b2World::Step(float,int,int)" (?Step@b2World@@QEAAXMHH@Z)
+main_game.obj : error LNK2001: unresolved external symbol "public: __cdecl b2World::b2World(struct b2Vec2 const &)" (??0b2World@@QEAA@AEBUb2Vec2@@@Z)
+renderer.obj : error LNK2001: unresolved external symbol glfwSwapBuffers
+renderer.obj : error LNK2001: unresolved external symbol __imp_glClear
+renderer.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderiv
+renderer.obj : error LNK2001: unresolved external symbol __imp___glewCompileShader
+renderer.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderInfoLog
+renderer.obj : error LNK2001: unresolved external symbol glfwPollEvents
+renderer.obj : error LNK2001: unresolved external symbol glfwInit
+renderer.obj : error LNK2001: unresolved external symbol glfwCreateWindow
+renderer.obj : error LNK2001: unresolved external symbol glfwMakeContextCurrent
+renderer.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
+renderer.obj : error LNK2001: unresolved external symbol __imp___glewDeleteShader
+renderer.obj : error LNK2001: unresolved external symbol glfwWindowShouldClose
+C:\Users\Felix\Desktop\Meine_Projekte\ALittleSomething\ALittleSomthing(ALS)\x64\Release\ALittleSomthing(ALS).exe : fatal error LNK1120: 14 unresolved externals
